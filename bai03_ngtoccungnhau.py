@@ -19,5 +19,5 @@ for i in range(len(mang)):
         a = nto(mang[i])
         b = nto(mang[j])
         if mang[i] != 0:
-            if mang[j] % mang[i] == 1 or ((a == 1 or b == 1) and mang[j] % mang[i] != 0) or mang[i] == 1:
+            if mang[j] % mang[i] == 1 or mang[i] == 1 or ((a == 1 or b == 1) and mang[j] % mang[i] != 0):
                 print(mang[i], mang[j])
